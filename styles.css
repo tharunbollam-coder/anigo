@@ -1,0 +1,227 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+
+.crunchyroll-app {
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+  min-height: 100vh;
+  padding: 10px;
+}
+.nav {
+  background-color: #23252b;
+  width: 100%;
+  height: 66px;
+  padding: 12px 28px 12px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.name-logo{
+  width: 100px;
+}
+.nav-down-arrow {
+  height: 15px;
+  width: 15px;
+}
+.nav-links {
+  display: none;
+  align-items: center;
+  margin: 0px;
+  gap: 25px;
+}
+
+.nav-head-2 {
+  display: none;
+}
+@media (min-width: 768px) {
+  .nav-head-2 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-links {
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    gap: 28px;
+  }
+}
+.nav-link {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  width: 65px;
+  height: 25px;
+  font-family: "Source Sans Pro";
+  color: #ffffff;
+  font-weight: 400;
+}
+.head-logo {
+  width: 24px;
+  height: 24px;
+}
+.head-img {
+  width: 60px;
+  height: 34px;
+  margin-right: 20px;
+}
+
+.carousel-img {
+  height: 25vh;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .carousel-img {
+    height: 50vh;
+  }
+}
+.anime-cards-container{
+  margin: 10px 0px 10px 0;
+}
+.anime-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.anime-card {
+  width: 110px;
+  height: 220px;
+  box-shadow: 0px 1px 10px #00000029;
+  margin: 10px 10px 10px 0px;
+  display: flex;
+  flex-grow: 1;
+  padding: 5px;
+  flex-direction: column;
+  background-color: transparent;
+}
+.anime-card:hover{
+  width: 115px;
+  box-shadow: 0px 1px 10px hwb(220 89% 5%);
+}
+@media (min-width: 761px) {
+  .anime-card {
+    width: 130px;
+    height: 250px;
+    box-shadow: 0px 1px 10px #00000029;
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+    background-color: transparent;
+  }
+}
+
+.anime-card-heading {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  .anime-card-heading {
+    color: #ffffff;
+    font-size: 22px;
+  }
+}
+
+.anime-card-img {
+  
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+}
+.anime-card-title {
+  color: #ffffff;
+  font-size: 14px;
+}
+.anime-card-text {
+  color: #909ca2;
+  font-size: 13px;
+}
+.anime-video-cards-container{
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+.anime-video-cards{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.anime-video-card{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 221px;
+  margin-right: 18px;
+  margin-bottom: 15px;
+}
+.anime-video-card:hover{
+  box-shadow: 0px 1px 10px hwb(220 89% 5%);
+  flex-grow: 0.5;
+}
+hr{
+
+  background: linear-gradient(90deg, #EF4323 0%, #FAB818 99.95%);
+
+}
+@media(min-width:375px){
+  .anime-video-card{
+    width: 45%;
+  }
+}
+@media (min-width: 768px) {
+  .anime-video-card{
+    width: 22%;
+    min-height: 221px;
+    margin-right: 18px;
+  }
+}
+
+
+
+.anime-video-card-body{
+  margin-top: 5px;
+}
+.anime-video-card-title{
+  color: #909CA2;
+  font-size: 14px;
+  font-family: 'Source Sans Pro';
+}
+.anime-video-card-text{
+  color: #ffffff;
+  font-size: 14px;
+  font-family: 'Source Sans Pro';
+}
+@media (min-width: 768px) {
+  .anime-video-card-text{
+    color: #ffffff;
+    font-size: 16px;
+    font-family: 'Source Sans Pro';
+  }
+}
+
+.anime-video-card-info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.anime-video-card-sub{
+     color: #909CA2;
+     font-family: 'Source Sans Pro';
+     font-size: 14px;
+}
+.anime-video-card-msg{
+  font-family: 'Source Sans Pro';
+  color: #909CA2;
+  font-size: 14px;
+}
